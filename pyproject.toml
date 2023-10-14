@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "test-proj-one"
+version = "0.1.0"
+description = ""
+authors = ["Astrella.Ne <mycuttingapp@gmail.com>"]
+readme = "README.md"
+packages = [{include = "test_proj_one"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+flake8 = "^6.1.0"
+
+[tool.poetry.scripts]
+damn-proj = "test_proj_one.scripts.damn_proj:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
